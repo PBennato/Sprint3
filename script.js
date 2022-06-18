@@ -55,3 +55,15 @@ let otroObjeto5 = {
     "nombre":"Dolar",
     "decimales":"3"
 }
+
+const contenido = document.querySelector("");
+
+function obtener() {
+  fetch("https://www.dolarsi.com/api/api.php?type=valoresprincipales")
+    .then((res) => res.json())
+    .then((data) => {
+      let valor=data[0].casa.compra
+      console.log(data[0].casa.compra);
+      document.write(valor)
+    });
+}
