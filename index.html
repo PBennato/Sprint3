@@ -55,6 +55,7 @@
             <div class="row row-cols-2" >
                 <p class="card-text">compra </p>
                 <p class="card-text">venta</p>
+                
             </div>
           </div>
         </div>
@@ -79,9 +80,27 @@
                 <p class="card-text">compra </p>
                 <p class="card-text">venta</p>
             
-            </div>
+           </div>
         </div>
     </div>
 </div>
+
+<script>
+
+const contenido = document.querySelector('#contenido');
+
+function obtener() {
+  fetch("https://www.dolarsi.com/api/api.php?type=valoresprincipales")
+    .then((res) => res.json())
+    .then((data) => {
+      let valor=data[0].casa.compra
+      console.log(data[0].casa.compra);
+      document.write(valor)
+      contenido.innerHTML = `${data}`
+    });
+}
+</script>
+
+
 </body>
 </html>
