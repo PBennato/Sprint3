@@ -8,80 +8,98 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="script.js">
+    <script src="script.js"></script>
 </head>
-<body>
+<body onload="cargar()" class="bg-secondary">
     <h1 class="text-center ">Cotizacion dolar hoy</h1>
 
-    <div class="card-group mx-3 text-center">
-        <div class="card">
+    <div class="card-group mx-3 text-center .bg-dark">
+        <div class="card text-white bg-dark">
             <div class="card-body">
             <img src="b1.png" alt="...">
             <h5 class="card-title">DOLAR OFICIAL</h5>
             <div class="row row-cols-2" >
-                <p class="card-text">compra</p>
-                <p class="card-text">venta</p>
+                <p class="card-text" id="doc">compra</p>
+                <p class="card-text" id="dov">venta</p>
+            </div>
+            <div>
+              <p class="card-text" id="vof"></p>
             </div>
           </div>
         </div>
-        <div class="card container">
+        <div class="card text-white bg-dark">
             <div class="card-body">
             <img src="./b2.png"  alt="...">
             <h5 class="card-title">DOLAR BLUE</h5>
             <div class="row row-cols-2" >
-                <p class="card-text">compra </p>
-                <p class="card-text">venta</p>
-            
-            </div>
+              <p class="card-text" id="dbc">compra</p>
+              <p class="card-text" id="dbv">venta</p>
+          </div>
+          <div>
+            <p class="card-text" id="vb"></p>
+          </div>
           </div>
         </div>
-        <div class="card">
+        <div class="card text-white bg-dark">
         <div class="card-body">
             <img src="b3.png" alt="...">
             <h5 class="card-title">CONTADO CON LIQUI</h5>
             <div class="row row-cols-2" >
-                <p class="card-text">compra </p>
-                <p class="card-text">venta</p>
-            
+              <p class="card-text" id="dclc">compra</p>
+              <p class="card-text" id="dclv">venta</p>
+          </div>
+          <div>
+            <p class="card-text" id="vcl"></p>
+          </div>
             </div>
         </div>
         </div>
       </div>
-      <div class="card-group m-3 text-center">
-        <div class="card">
-            <div class="card-body">
-            <img src="dolar_promedio.png"  alt="...">
-            <h5 class="card-title">DOLAR PROMEDIO</h5>
-            <div class="row row-cols-2" >
-                <p class="card-text">compra </p>
-                <p class="card-text">venta</p>
-            </div>
+      <div class="card-group m-3 text-center ">
+        <div class="card text-white bg-dark">
+          <div class="card-body">
+              <img src="dolar_promedio.png"  >
+              <h5 class="card-title">DOLAR PROMEDIO</h5>
+              <div class="row row-cols-2" >
+                <p class="card-text" id="dpc">compra</p>
+               <p class="card-text" id="dpv">venta</p>
+              </div>
+              <div>
+                <p class="card-text" id="vp"></p>
+              </div>
           </div>
         </div>
-        <div class="card ">
-         
-          <div class="card-body">
+      
+        <div class="card text-white bg-dark ">
+                   <div class="card-body">
             <img src="b5.png"  alt="...">
             <h5 class="card-title">DOLAR BOLSA</h5>
             <div class="row row-cols-2" >
-                <p class="card-text">compra </p>
-                <p class="card-text">venta</p>
+              <p class="card-text" id="dclc">compra</p>
+              <p class="card-text" id="dclv">venta</p>
+             </div>
+             <div>
+               <p class="card-text" id="vcl"></p>
+             </div>
             
             </div>
-          </div>
+            
         </div>
-        <div class="card">
-         
-          <div class="card-body">
+        <div class="card text-white bg-dark ">
+         <div class="card-body">
             <img src="riesgo_pais_s.png"  alt="...">
             <h5 class="card-title">DOLAR TURISTA</h5>
             <div class="row row-cols-2" >
-                <p class="card-text">compra </p>
-                <p class="card-text">venta</p>
-            
+              <p class="card-text" id="dclc">compra</p>
+              <p class="card-text" id="dclv">venta</p>
+             </div>
+             <div>
+               <p class="card-text" id="vcl"></p>
+             </div>
             </div>
         </div>
     </div>
 </div>
+
 </body>
 </html>
