@@ -2,7 +2,6 @@ function cargar() {
     fetch("https://www.dolarsi.com/api/api.php?type=valoresprincipales")
     .then(data => data.json())
     .then(data => {
-        console.log(data)
        document.getElementById("doc").innerHTML= `Compra:$${data[0].casa.compra}`
        document.getElementById("dov").innerHTML= `Venta:$${data[0].casa.venta}`
        document.getElementById("vof").innerHTML= `Variacion:${data[0].casa.variacion}%`
